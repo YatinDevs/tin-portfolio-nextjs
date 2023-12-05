@@ -23,7 +23,7 @@ export default function Home() {
     <motion.div
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
-      className="bg-white top-28  relative dark:bg-[#212121] shadow-lg rounded-xl  lg:max-w-5xl lg:mx-auto md:mx-auto md:max-w-[760px] sm:max-w-[525px] xs:max-w-[412px] xxs:max-w-[356px] xxs:mx-auto "
+      className="bg-white top-28  relative dark:bg-[#212121] shadow-lg pb-3 rounded-xl  lg:max-w-5xl lg:mx-auto md:mx-auto md:max-w-[760px] sm:max-w-[525px] xs:max-w-[412px] xxs:max-w-[356px] xxs:mx-auto "
     >
       <div className=" lg:p-6 p-5">
         <div className="flex justify-between  w-full">
@@ -119,7 +119,7 @@ export default function Home() {
       </div>
 
       <div>
-        <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6 max-md:p-3 rounded-xl">
+        <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6 max-md:p-3 mx-3 rounded-xl">
           <div className="flex items-center justify-between mt-4">
             <div className="flex items-center gap-x-2 font-InterRe">
               <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
@@ -176,7 +176,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6 mt-3 max-md:p-3 rounded-xl">
+        <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6 mt-4 mx-3 py-2 max-md:p-3 rounded-xl">
           <div className="flex items-center justify-between mt-4">
             <div className="flex items-center gap-x-2 font-InterRe">
               <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
@@ -195,7 +195,7 @@ export default function Home() {
               <FiArrowRight className="text-neutral-500" />
             </div>
           </div>
-          <div className="flex flex-col gap-y-4">
+          <div className="flex flex-col gap-y-4 mb-5">
             <Skill />
             <div>
               <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
