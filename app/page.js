@@ -2,7 +2,6 @@
 
 "use client";
 import Footer from "./Footer/footer";
-
 import { Row } from "react-bootstrap";
 import GitHubCalendar from "react-github-calendar";
 import useSWR from "swr";
@@ -200,6 +199,23 @@ export default function Home() {
               </div>
               <div>
                 <Skill />
+                <Row
+                  style={{ justifyContent: "center", paddingBottom: "10px" }}
+                >
+                  <h1
+                    className="text-4xl text-center"
+                    style={{ paddingBottom: "20px" }}
+                  >
+                    Days I <strong className=" text-fuchsia-800">Code</strong>
+                  </h1>
+                  <GitHubCalendar
+                    username="YatinDevs"
+                    blockSize={12}
+                    blockMargin={5}
+                    color="#6102ce"
+                    fontSize={16}
+                  />
+                </Row>
               </div>
             </div>
           </div>

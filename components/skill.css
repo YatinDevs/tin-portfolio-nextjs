@@ -188,7 +188,7 @@
   .backgroundImg {
     align-self: center;
     width: 490px;
-    height: 1010px;
+    height: 620px;
     margin-left: 50px;
     object-fit: contain;
     border-radius: 36px;
@@ -216,7 +216,7 @@
   .backgroundImg {
     align-self: center;
     width: 100%;
-    height: 1440px;
+    height: 1250px;
     margin-left: 50px;
     object-fit: contain;
     border-radius: 36px;
