@@ -61,7 +61,7 @@ const Skill = () => {
       title: "Web Development",
       list: [
         { name: "React", badge: react, nameColor: "#4fd6cf" },
-        { name: "Angular", badge: angular, nameColor: "#ff6363" },
+        // { name: "Angular", badge: angular, nameColor: "#ff6363" },
         { name: "SpringBoot", badge: django, nameColor: "green" },
         { name: "Node", badge: node, badgeColor: "lightgray" },
         {
@@ -103,33 +103,157 @@ const Skill = () => {
   const others = [
     {
       title: "Project Management Method",
-      list: [
-        { name: "Agile", textColor: "black" },
-        { name: "Git", textColor: "black" },
-      ],
+      list: [{ name: "Agile" }, { name: "Git" }],
     },
 
     {
       title: "Relevant Coursework",
       list: [
-        { name: "OS", textColor: "black" },
-        { name: "Visual Recognision", textColor: "black" },
-        { name: "DSAlgorithm", textColor: "black" },
-        { name: "Database Management", textColor: "black" },
+        { name: "OS" },
+        { name: "Visual Recognision" },
+        { name: "DSAlgorithm" },
+        { name: "Database Management" },
       ],
     },
   ];
 
   return (
-    <div className="">
-      <div className="">
-        <div className="">
-          <Image className="" src={brainIcon} alt="" />
-          <p className="">Skill</p>
+    <div id="skill" className="skillContainer">
+      <div className="headerContainer">
+        <div className="header">
+          <Image className="headerIcon" src={brainIcon} alt="" />
+          <p className="headerTitle">Skill</p>
         </div>
-        <div className=""></div>
-        <div className="">
-          <Image className="" src={bkgImage} alt="" />
+        <div className="divider"></div>
+        <div className="contentContainer">
+          <Image className="backgroundImg" src={bkgImage} alt="" />
+          <div className="contentSkill">
+            <div className="content__left">
+              <div className="colTitle">LANGUAGES</div>
+              {languages.map((lang, idx, arr) => {
+                return (
+                  <div key={lang.title}>
+                    <h1 className="colSubTitle">{lang.title}</h1>
+
+                    {lang.list.map((langtype, id, arr) => {
+                      return (
+                        <div key={langtype.name} className="badge">
+                          {langtype.badge && (
+                            <Image
+                              className="skillbadge"
+                              style={
+                                langtype.badgeColor && {
+                                  backgroundColor: langtype.badgeColor,
+                                }
+                              }
+                              src={langtype.badge && langtype.badge}
+                              alt="languages"
+                            />
+                          )}
+                          <p
+                            key={id}
+                            style={
+                              langtype.textColor
+                                ? {
+                                    backgroundColor: "transparent",
+                                    color: langtype.textColor,
+                                  }
+                                : { backgroundColor: langtype.nameColor }
+                            }
+                            className="skillEntry"
+                          >
+                            {langtype.name}
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="content__mid">
+              <div className="colTitle">TOOLS/FRAMEWORKS</div>
+              {toolsFrameworks.map((tool, idx) => {
+                return (
+                  <div key={tool.title}>
+                    <p className="colSubTitle">{tool.title}</p>
+                    {tool.list.map((tools, idx) => {
+                      return (
+                        <div className="badge" key={tools.name}>
+                          {tools.badge && (
+                            <Image
+                              className="skillbadge"
+                              style={
+                                tools.badgeColor && {
+                                  backgroundColor: tools.badgeColor,
+                                }
+                              }
+                              src={tools.badge && tools.badge}
+                              alt=""
+                            />
+                          )}
+                          <p
+                            key={idx}
+                            style={
+                              tools.textColor
+                                ? {
+                                    backgroundColor: "transparent",
+                                    color: tools.textColor,
+                                  }
+                                : { backgroundColor: tools.nameColor }
+                            }
+                            className="skillEntry"
+                          >
+                            {tools.name}
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="content__right">
+              <div className="colTitle">OTHERS</div>
+              {others.map((subType, id) => {
+                return (
+                  <div key={subType.title}>
+                    <p className="colSubTitle">{subType.title}</p>
+                    {subType.list.map((entry, i) => {
+                      return (
+                        <div className="badge" key={entry.name}>
+                          {entry.badge && (
+                            <Image
+                              className="skillbadge"
+                              src={entry.badge && entry.badge}
+                              alt=""
+                              key={i}
+                            />
+                          )}
+                          <p
+                            key={i}
+                            style={
+                              entry.textColor
+                                ? {
+                                    backgroundColor: "transparent",
+                                    color: entry.textColor,
+                                  }
+                                : { backgroundColor: entry.nameColor }
+                            }
+                            className="skillEntry"
+                          >
+                            {entry.name}
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+              <div></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -137,129 +261,3 @@ const Skill = () => {
 };
 
 export default Skill;
-
-// <div className="contentSkill">
-// <div className="content__left">
-//   <div className="colTitle">LANGUAGES</div>
-//   {languages.map((lanType, idx) => (
-//     <>
-//       <p key={lanType.title} className="colSubTitle">
-//         {lanType.title}
-//       </p>
-//       {lanType.list.map((entry, i) => (
-//         <div className="badge" key={entry.badge}>
-//           {entry.badge && (
-//             <Image
-//               className="skillbadge"
-//               style={
-//                 entry.badgeColor && {
-//                   backgroundColor: entry.badgeColor,
-//                 }
-//               }
-//               src={entry.badge && entry.badge}
-//               alt=""
-//             />
-//           )}
-//           <p
-//             key={i}
-//             style={
-//               entry.textColor
-//                 ? {
-//                     backgroundColor: "transparent",
-//                     color: entry.textColor,
-//                   }
-//                 : { backgroundColor: entry.nameColor }
-//             }
-//             className="skillEntry"
-//           >
-//             {entry.name}
-//           </p>
-//         </div>
-//       ))}
-//       <br></br>
-//     </>
-//   ))}
-// </div>
-// <div className="content__mid">
-//   <div className="colTitle">TOOLS/FRAMEWORKS</div>
-//   {toolsFrameworks.map((subType, idx) => (
-//     <>
-//       <p key={idx} className="colSubTitle">
-//         {subType.title}
-//       </p>
-//       {subType.list.map((entry, i) => (
-//         <div className="badge" key={entry.badge}>
-//           {entry.badge && (
-//             <Image
-//               className="skillbadge"
-//               style={
-//                 entry.badgeColor && {
-//                   backgroundColor: entry.badgeColor,
-//                 }
-//               }
-//               src={entry.badge && entry.badge}
-//               alt=""
-//             />
-//           )}
-//           <p
-//             key={i}
-//             style={
-//               entry.textColor
-//                 ? {
-//                     backgroundColor: "transparent",
-//                     color: entry.textColor,
-//                   }
-//                 : { backgroundColor: entry.nameColor }
-//             }
-//             className="skillEntry"
-//           >
-//             {entry.name}
-//           </p>
-//         </div>
-//       ))}
-//       <br></br>
-//     </>
-//   ))}
-// </div>
-// <div className="content__right">
-//   <div className="colTitle">OTHERS</div>
-//   {others.map((subType, idx) => (
-//     <>
-//       <p key={idx} className="colSubTitle">
-//         {subType.title}
-//       </p>
-//       {subType.list.map((entry, i) => (
-//         <div className="badge" key={entry.badge}>
-//           {entry.badge && (
-//             <Image
-//               className="skillbadge"
-//               style={
-//                 entry.badgeColor && {
-//                   backgroundColor: entry.badgeColor,
-//                 }
-//               }
-//               src={entry.badge && entry.badge}
-//               alt=""
-//             />
-//           )}
-//           <p
-//             key={i}
-//             style={
-//               entry.textColor
-//                 ? {
-//                     backgroundColor: "transparent",
-//                     color: entry.textColor,
-//                   }
-//                 : { backgroundColor: entry.nameColor }
-//             }
-//             className="skillEntry"
-//           >
-//             {entry.name}
-//           </p>
-//         </div>
-//       ))}
-//       <br></br>
-//     </>
-//   ))}
-// </div>
-// </div>

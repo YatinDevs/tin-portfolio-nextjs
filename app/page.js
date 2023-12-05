@@ -198,6 +198,9 @@ export default function Home() {
                   <FiArrowRight className="text-neutral-500" />
                 </div>
               </div>
+              <div>
+                <Skill />
+              </div>
             </div>
           </div>
         </div>

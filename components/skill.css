@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
 
 .headerContainer {
@@ -76,17 +76,17 @@
 }
 
 .content__left {
-  border-right: 2px solid white;
+  border-right: 2px solid #ddd;
   justify-self: center;
   width: 35%;
-  height: 75vh;
+  height: 40vh;
 }
 
 .content__mid {
-  border-right: 2px solid white;
+  border-right: 2px solid #ddd;
   justify-content: center;
   width: 40%;
-  height: 75vh;
+  height: 38vh;
 }
 
 .content__right {
@@ -105,6 +105,8 @@
 }
 
 .colSubTitle {
+  text-align: center;
+
   font-size: 15px;
   margin: 5px;
   color: #129f6d;
@@ -275,3 +277,92 @@
     margin-bottom: 20px;
   }
 }
+
+/*
+ 
+
+// <div className="content__mid">
+//   <div className="colTitle">TOOLS/FRAMEWORKS</div>
+//   {toolsFrameworks.map((subType, idx) => (
+//     <>
+//       <p key={idx} className="colSubTitle">
+//         {subType.title}
+//       </p>
+//       {subType.list.map((entry, i) => (
+//         <div className="badge" key={entry.badge}>
+//           {entry.badge && (
+//             <Image
+//               className="skillbadge"
+//               style={
+//                 entry.badgeColor && {
+//                   backgroundColor: entry.badgeColor,
+//                 }
+//               }
+//               src={entry.badge && entry.badge}
+//               alt=""
+//             />
+//           )}
+//           <p
+//             key={i}
+//             style={
+//               entry.textColor
+//                 ? {
+//                     backgroundColor: "transparent",
+//                     color: entry.textColor,
+//                   }
+//                 : { backgroundColor: entry.nameColor }
+//             }
+//             className="skillEntry"
+//           >
+//             {entry.name}
+//           </p>
+//         </div>
+//       ))}
+//       <br></br>
+//     </>
+//   ))}
+// </div>
+// <div className="content__right">
+//   <div className="colTitle">OTHERS</div>
+//   {others.map((subType, idx) => (
+//     <>
+//       <p key={idx} className="colSubTitle">
+//         {subType.title}
+//       </p>
+//       {subType.list.map((entry, i) => (
+//         <div className="badge" key={entry.badge}>
+//           {entry.badge && (
+//             <Image
+//               className="skillbadge"
+//               style={
+//                 entry.badgeColor && {
+//                   backgroundColor: entry.badgeColor,
+//                 }
+//               }
+//               src={entry.badge && entry.badge}
+//               alt=""
+//             />
+//           )}
+//           <p
+//             key={i}
+//             style={
+//               entry.textColor
+//                 ? {
+//                     backgroundColor: "transparent",
+//                     color: entry.textColor,
+//                   }
+//                 : { backgroundColor: entry.nameColor }
+//             }
+//             className="skillEntry"
+//           >
+//             {entry.name}
+//           </p>
+//         </div>
+//       ))}
+//       <br></br>
+//     </>
+//   ))}
+// </div>
+// </div>
+
+*/
