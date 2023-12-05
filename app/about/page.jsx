@@ -2,7 +2,7 @@
 
 "use client";
 import Footer from "../Footer/footer";
-
+import Skill from "@/components/Skill";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
@@ -229,6 +229,9 @@ function page() {
             src="/img/bg-pc.jpg"
             alt=""
           />
+        </div>
+        <div className="flex flex-col gap-y-4 mb-5">
+          <Skill />
         </div>
       </div>
     </motion.div>
