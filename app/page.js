@@ -138,7 +138,7 @@ export default function Home() {
                 <div className="border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#373737] shadow-md border  w-fit h-8 px-2 rounded-md  flex items-center gap-x-1 ">
                   <Link href={"/project"}>
                     <button className="text-neutral-700 dark:text-white  text-sm font-semibold">
-                      View All
+                      More Projects
                     </button>
                   </Link>
                   <FiArrowRight className="text-neutral-500" />
@@ -193,34 +193,13 @@ export default function Home() {
                 </div>
 
                 <div className="border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#373737] shadow-md border  w-fit h-8 px-2 rounded-md  flex items-center gap-x-1 ">
-                  <Link href={"/project"}>
+                  <Link href={"/about"}>
                     <button className="text-neutral-700 dark:text-white  text-sm font-semibold">
-                      View All
+                      About Me
                     </button>
                   </Link>
+
                   <FiArrowRight className="text-neutral-500" />
-                </div>
-              </div>
-              <div className="flex items-center justify-between ">
-                <div className="cursor-pointer">
-                  <Skill />
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="cursor-pointer">
-                  <h1
-                    className="project-heading"
-                    style={{ paddingBottom: "20px" }}
-                  >
-                    Days I <strong className="yellow">Code</strong>
-                  </h1>
-                  <GitHubCalendar
-                    username="YatinDevs"
-                    blockSize={12}
-                    blockMargin={5}
-                    color="#6102ce"
-                    fontSize={16}
-                  />
                 </div>
               </div>
             </div>
@@ -314,3 +293,20 @@ export default function Home() {
     </>
   );
 }
+
+// <div className="mt-6">
+//                 <div className="cursor-pointer">
+//                   <h1
+
+//                   >
+//                     Days I <strong className="yellow">Code</strong>
+//                   </h1>
+//                   <GitHubCalendar
+//                     username="YatinDevs"
+//                     blockSize={12}
+//                     blockMargin={5}
+//                     color="#6102ce"
+//                     fontSize={16}
+//                   />
+//                 </div>
+//               </div>

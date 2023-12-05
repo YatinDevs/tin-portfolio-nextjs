@@ -12,7 +12,7 @@ function page() {
             <div className="flex items-center gap-x-2 font-InterRe">
               <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
               <h1 className="text-neutral-700 dark:text-[#C0C0C0] max-md:text-xl text-xl font-InterRe font-bold">
-                Hire Me
+                Contact Me
               </h1>
             </div>
             <div className="bg-[#F6F8FA] dark:bg-[#115e3b] h-6 w-6 lg:w-fit lg:px-3 rounded-full flex items-center justify-center gap-x-2">
@@ -24,9 +24,9 @@ function page() {
           </div>
 
           <div className="mt-9">
-            <h1 className="text-4xl font-InterBo">Design Inquiry</h1>
+            <h1 className="text-4xl font-InterBo">Project Ideas</h1>
             <p className="dark:text-[#C0C0C0] my-5">
-              Got an idea and need design help? Reach out now
+              Got an idea and need help? Reach out now
             </p>
 
             <div>
