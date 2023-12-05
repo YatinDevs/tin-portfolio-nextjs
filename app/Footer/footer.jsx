@@ -13,9 +13,8 @@ function Footerpage() {
     <motion.div
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
-      className="bg-white relative  top-36 dark:bg-[#212121] shadow-md rounded-xl lg:max-w-5xl mx-4 md:mx-auto md: max-w-2xl xs:mx-4 lg:px-0 "
+      className="bg-white top-36 relative dark:bg-[#212121] shadow-md rounded-xl  lg:max-w-5xl lg:mx-auto md:mx-auto md:max-w-[760px] sm:max-w-[525px] xs:max-w-[412px] xxs:max-w-[356px] xxs:mx-auto"
     >
-      {" "}
       <div className="p-2 lg:mx-4">
         <div className="mx-auto py-6 max-w-md">
           <h2 className=" text-4xl text-center dark:text-white text-[#353849] font-InterBo">
@@ -43,7 +42,7 @@ function Footerpage() {
             </Link>
             <Link
               href={
-                "https://drive.google.com/file/d/1c0I2v8Rb9FrKZpN35UdFmWr8YtA1YyEq/view"
+                "https://drive.google.com/file/d/1vu_2Cb3BbndXsRdJXiI6s5imm9XxADo8/view"
               }
             >
               <div className="border-neutral-300 dark:border-neutral-700/50 shadow-md border  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">

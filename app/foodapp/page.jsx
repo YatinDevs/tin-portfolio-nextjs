@@ -13,24 +13,26 @@ import Image from "next/image";
 
 const links = [
   {
-    img: "/img/img1.png",
-    title: "Rectangle",
-    subtitle: ["Product design, Icon design"],
+    img: "/img/crazytv.png",
+    title: "CrazyTV - Entertainment ",
+    subtitle: ["Free tv shows streaming website."],
     icon: <BsChevronRight />,
-    href: "/rectangle",
-  },
-  {
-    img: "/img/wink.png",
-    title: "Morva labs",
-    subtitle: ["Visual design, Branding"],
-    href: "/morvalabs",
+    href: "/crazytv",
   },
   {
     img: "/img/foot.png",
-    title: "Simply",
+    title: "Travel Website",
     subtitle: ["Landing  page, illustration design"],
     // u can redirect to other sites here
-    href: "/simply",
+    href: "/travelapp",
+  },
+  {
+    img: "/img/wink.png",
+    title: "Plastic Management System",
+    subtitle: [
+      "User-friendly interface, seamless user experience, and data security.",
+    ],
+    href: "/plasticmanage",
   },
 ];
 
@@ -46,7 +48,7 @@ function page() {
             <p>Year</p>
           </div>
           <div>
-            <p> CrazyTV streaming Web Application .</p>
+            <p> CrazyTV streaming Web App.</p>
             <p> Reactjs , Axios , Redux-Toolkit ,Scss.</p>
             <p> Design, coding, and testing </p>
             <p> 2023</p>
@@ -59,8 +61,8 @@ function page() {
               className="w-12 h-12 object-cover rounded-full "
               src="/img/crazytv.png"
               alt=""
-              layout="fill"
-              objectFit="cover" // or objectFit="contain"
+              width={100}
+              height={100}
             />
           </div>
 
@@ -89,8 +91,8 @@ function page() {
                 className="aspect-square rounded-lg"
                 src="/img/landing_page_crazytv.png"
                 alt=""
-                layout="fill"
-                objectFit="cover" // or objectFit="contain"
+                width={1024}
+                height={300} // or objectFit="contain"
               />
               <p className="my-5 text-lg dark:text-neutral-300  text-neutral-900">
                 Key Points Learned From Project : - React for build - Redux for
@@ -202,8 +204,8 @@ function page() {
                             className="w-10 h-10 object-cover rounded-full "
                             src={link.img}
                             alt=""
-                            layout="fill"
-                            objectFit="cover" // or objectFit="contain"
+                            width={300}
+                            height={300}
                           />
                         </div>
 
@@ -229,8 +231,6 @@ function page() {
             </div>
           </div>
         </div>
-
-        <Footer />
       </div>
     </div>
   );

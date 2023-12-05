@@ -3,6 +3,8 @@ import { AiOutlineDribbble } from "react-icons/ai";
 import { CiInstagram, CiTwitter } from "react-icons/ci";
 import { FaLinkedinIn } from "react-icons/fa";
 import Footer from "../Footer/footer";
+import Link from "next/link";
+import { FiArrowRight, FiCopy } from "react-icons/fi";
 
 function page() {
   return (
@@ -16,6 +18,7 @@ function page() {
                 Contact Me
               </h1>
             </div>
+
             <div className="bg-[#F6F8FA] dark:bg-[#115e3b] h-6 w-6 lg:w-fit lg:px-3 rounded-full flex items-center justify-center gap-x-2">
               <div className="w-2 h-2 rounded-full animate-ping dark:animate-none bg-[#28C780]" />
               <p className="text-[#2b9364] hidden lg:flex text-xs font-semibold uppercase ">
@@ -26,9 +29,23 @@ function page() {
 
           <div className="mt-9">
             <h1 className="text-4xl font-InterBo">Project Ideas</h1>
-            <p className="dark:text-[#C0C0C0] my-5">
-              Got an idea and need help? Reach out now
-            </p>
+            <div className="flex flex-row justify-between xs:flex-col ">
+              <p className="dark:text-[#C0C0C0] my-5">
+                Got an idea and need help? Reach out now
+              </p>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1vu_2Cb3BbndXsRdJXiI6s5imm9XxADo8/view"
+                }
+              >
+                <div className="border-neutral-300 dark:border-neutral-700/50  shadow-md mb-4 border  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
+                  <FiCopy className="" />
+                  <span className="text-neutral-700 dark:text-white  font-semibold">
+                    Copy Resume
+                  </span>
+                </div>
+              </Link>
+            </div>
 
             <div>
               <div className="w-full flex gap-x-4">

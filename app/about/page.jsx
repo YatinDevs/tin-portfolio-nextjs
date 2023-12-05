@@ -39,7 +39,7 @@ function page() {
     <motion.div
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
-      className="bg-white top-28 relative dark:bg-[#212121] shadow-md rounded-xl lg:max-w-5xl mx-4 md:mx-auto md: max-w-2xl xs:mx-4 lg:px-0 "
+      className="bg-white top-28 relative dark:bg-[#212121] shadow-lg rounded-xl  lg:max-w-5xl lg:mx-auto md:mx-auto md:max-w-[760px] sm:max-w-[525px] xs:max-w-[412px] xxs:max-w-[356px] xxs:mx-auto"
     >
       <div className=" lg:p-6 p-5 ">
         <div className="flex mt-4 items-center gap-x-2 font-InterRe">

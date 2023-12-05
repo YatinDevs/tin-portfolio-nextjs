@@ -14,24 +14,26 @@ import Image from "next/image";
 
 const links = [
   {
-    img: "/img/img1.png",
-    title: "Rectangle",
-    subtitle: ["Product design, Icon design"],
-    icon: <BsChevronRight />,
-    href: "/rectangle",
-  },
-  {
-    img: "/img/wink.png",
-    title: "Morva labs",
-    subtitle: ["Visual design, Branding"],
-    href: "/morvalabs",
+    img: "/img/pizza.png",
+    title: "Food Application",
+    subtitle: ["Landing  page, illustration design"],
+    // u can redirect to other sites here
+    href: "/foodapp",
   },
   {
     img: "/img/foot.png",
-    title: "Simply",
+    title: "Travel Website",
     subtitle: ["Landing  page, illustration design"],
     // u can redirect to other sites here
-    href: "/simply",
+    href: "/travelapp",
+  },
+  {
+    img: "/img/wink.png",
+    title: "Plastic Management System",
+    subtitle: [
+      "User-friendly interface, seamless user experience, and data security.",
+    ],
+    href: "/plasticmanage",
   },
 ];
 
@@ -227,90 +229,6 @@ function page() {
                   </div>
                 ))}
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-24 p-2">
-          <div className="mx-auto max-w-md">
-            <div>
-              <h2 className=" text-4xl text-center dark:text-white text-[#353849] font-InterBo">
-                Let’s work together.
-              </h2>
-              <p className="text-center mt-3 dark:text-neutral-300 text-[#666D80] text-lg">
-                Creating user experience and visual appealing design
-              </p>
-            </div>
-
-            <div className="">
-              <div className="flex items-center gap-x-4 justify-center mt-6">
-                <Link href={"https://www.linkedin.com/in/c-yatin727/"}>
-                  <div className="bg-black dark:bg-[#373737] w-fit shadow-md  px-2 rounded-md flex items-center gap-x-2 py-1">
-                    <span className="text-white  font-semibold">
-                      <FaLinkedin />
-                    </span>
-                  </div>
-                </Link>
-                <Link href={"https://github.com/YatinDevs"}>
-                  <div className="bg-black dark:bg-[#373737] w-fit shadow-md  px-2 rounded-md flex items-center gap-x-2 py-1">
-                    <span className="text-white  font-semibold">
-                      <FaGithub />
-                    </span>
-                  </div>
-                </Link>
-                <Link
-                  href={
-                    "https://drive.google.com/file/d/1c0I2v8Rb9FrKZpN35UdFmWr8YtA1YyEq/view"
-                  }
-                >
-                  <div className="border-neutral-300 dark:border-neutral-700/50 shadow-md border  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
-                    <FiCopy className="" />
-                    <span className="text-neutral-700 dark:text-white  font-semibold">
-                      Copy Resume
-                    </span>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-[#F6F8FA] p-6 dark:bg-[#2C2C2C]  mt-14 rounded-md">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-x-2 font-InterRe">
-                <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
-                <h1 className="text-neutral-700 dark:text-[#C0C0C0] text-lg font-InterMe">
-                  Follow Me
-                </h1>
-              </div>
-
-              <div className="flex gap-x-2">
-                <div className="border-neutral-300 bg-white dark:bg-[#373737] dark:border-none shadow-md drop-shadow-md border  w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1 ">
-                  <CiTwitter className="text-neutral-500 dark:text-white" />
-                </div>
-                <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1 ">
-                  <CiInstagram className="text-neutral-500 dark:text-white" />
-                </div>{" "}
-                <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex justify-center items-center  gap-x-1 ">
-                  <AiOutlineDribbble className="text-neutral-500 dark:text-white" />
-                </div>
-                <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1  ">
-                  <FaLinkedinIn className="text-neutral-500 dark:text-white" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6  mt-4 rounded-md">
-            <div className="text-center">
-              <span className="text-neutral-700 dark:text-neutral-400">
-                © 2023 All Right Reserved
-              </span>
-              <p className="text-neutral-500">
-                By{" "}
-                <span className="hover:underline  hover:text-neutral-400 text-neutral-700 dark:text-neutral-300">
-                  Yatin Chaudhari
-                </span>
-              </p>
             </div>
           </div>
         </div>

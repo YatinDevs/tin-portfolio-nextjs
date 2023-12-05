@@ -1,5 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -11,40 +14,9 @@ import { CiLocationArrow1, CiTwitter, CiInstagram } from "react-icons/ci";
 // import { BsChevronRight } from "react-icons/bs";
 import Image from "next/image";
 import Footer from "../Footer/footer";
+import { projects } from "../../data/data";
 
-const links = [
-  {
-    img: "/img/crazytv.png",
-    title: "CrazyTV - Entertainment ",
-    subtitle: ["Free tv shows streaming website."],
-    icon: <BsChevronRight />,
-    href: "/crazytv",
-  },
-  {
-    img: "/img/pizza.png",
-    title: "Food Application",
-    subtitle: ["Landing  page, illustration design"],
-    // u can redirect to other sites here
-    href: "/foodapp",
-  },
-  {
-    img: "/img/foot.png",
-    title: "Travel Website",
-    subtitle: ["Landing  page, illustration design"],
-    // u can redirect to other sites here
-    href: "/travelapp",
-  },
-  {
-    img: "/img/wink.png",
-    title: "Plastic Management System",
-    subtitle: [
-      "User-friendly interface, seamless user experience, and data security.",
-    ],
-    href: "/plasticmanage",
-  },
-];
-
-const projects = [
+const link = [
   {
     img: "/img/pizza.png",
     title: "Goven",
@@ -64,7 +36,11 @@ const projects = [
 ];
 function page() {
   return (
-    <div className="bg-white top-24 relative dark:bg-[#212121] shadow-md rounded-xl max-w-xl lg:mx-auto mx-4 lg:max-w-xl max-2xl md:mx-auto sm:mx-auto lg:px-0 ">
+    <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
+      className="bg-white top-28 relative dark:bg-[#212121] shadow-lg rounded-xl  lg:max-w-5xl lg:mx-auto md:mx-auto md:max-w-[760px] sm:max-w-[525px] xs:max-w-[412px] xxs:max-w-[356px] xxs:mx-auto"
+    >
       <div className=" lg:p-6 p-4 max-md:p-5 ">
         <div className="flex items-center mt-4  gap-x-2 ">
           <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
@@ -100,12 +76,12 @@ function page() {
             </div>
           </div>
           <div className="mt-6">
-            <Link href={"/"}>
-              {links.map((link) => (
-                <div
-                  key={link.title}
-                  className="bg-white dark:bg-[#373737] mt-3  mb-4 rounded-xl  max-md:flex-col max-md:items-start flex items-center justify-between p-5 dark:border-neutral-600  shadow-md drop-shadow-md dark:border max-md:p-7 "
-                >
+            {projects.map((link) => (
+              <div
+                key={link.title}
+                className="bg-white dark:bg-[#373737] mt-3  mb-4 rounded-xl  max-md:flex-col max-md:items-start flex items-center justify-between p-5 dark:border-neutral-600  shadow-md drop-shadow-md dark:border max-md:p-7 "
+              >
+                <Link href={link.href}>
                   <div className="flex items-center gap-x-4 max-md:flex-col max-md:items-start">
                     <div className="drop-shadow-md dark:bg-neutral-900/50 bg-white  p-2 rounded-full ">
                       <Image
@@ -130,9 +106,9 @@ function page() {
                   <div className="max-md:hidden md:block">
                     <BsChevronRight />
                   </div>
-                </div>
-              ))}
-            </Link>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -158,7 +134,7 @@ function page() {
 
             <div className="mt-14">
               <Link href={"/"}>
-                {projects.map((link) => (
+                {link.map((link) => (
                   <div
                     key={link.subtitle}
                     className="dark:bg-[#373737] bg-white mt-3 rounded-xl shadow-md flex  max-md:flex-col max-md:items-start items-center justify-between p-5 "
@@ -194,7 +170,7 @@ function page() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

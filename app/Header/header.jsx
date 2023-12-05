@@ -32,8 +32,8 @@ function Headpage() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <nav className="fixed w-full z-30 py-4 rounded-lg">
-      <div className="lg:max-w-5xl  md:max-w-[740px] mx-auto max-2xl px-4 lg:px-0 ">
+    <nav className="fixed w-full z-30  ">
+      <div className="py-6 rounded-lg  lg:max-w-5xl lg:mx-auto md:mx-auto md:max-w-[760px] sm:max-w-[525px] xs:max-w-[412px] xxs:max-w-[412px] xxs:mx-auto">
         <div className="flex  items-center justify-between shadow-md bg-white  dark:bg-[#212121] dark:border-neutral-700/30 border rounded-xl p-3 ">
           <div className="flex space-x-3 items-center">
             {icons.map((icon) => {
@@ -50,7 +50,7 @@ function Headpage() {
                   }`}
                 >
                   <span
-                    className={`  text-gray-400 dark:text-neutral-500 sm:text-3xl relative z-20 xs:text-2xl  ${
+                    className={`text-gray-400  dark:text-neutral-500 sm:text-3xl xs:text-2xl xxs:text-xl relative z-20  ${
                       icon.path === hoveredPath &&
                       "text-neutral-800 transition-all ease-in-out duration-500 "
                     } `}
@@ -81,7 +81,7 @@ function Headpage() {
             })}
           </div>
 
-          <div className="flex items-center gap-x-3">
+          <div className="flex items-center gap-x-3 xxs:mx-5">
             <div
               onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
               className="cursor-pointer"
@@ -94,9 +94,9 @@ function Headpage() {
             </div>
 
             <Link href={"/contact"}>
-              <div className="bg-black dark:bg-[#373737]  px-2 rounded-md flex items-center gap-x-2 py-1">
-                <AiOutlinePlusCircle className="text-white tex-3" />
-                <span className="text-white  font-semibold xs:text-sm sm:text-lg">
+              <div className="bg-black dark:bg-[#373737] px-2 rounded-md flex items-center gap-x-2 py-2 mx-2">
+                <AiOutlinePlusCircle className="text-white " />
+                <span className="text-white  font-semibold xs:text-xs sm:text-lg xxs:text-md">
                   Hire Me
                 </span>
               </div>

@@ -172,7 +172,7 @@ const Skill = () => {
               })}
             </div>
             <div className="content__mid">
-              <div className="colTitle">TOOLS/FRAMEWORKS</div>
+              <div className="colTitle">FRAMEWORKS</div>
               {toolsFrameworks.map((tool, idx) => {
                 return (
                   <div key={tool.title}>
