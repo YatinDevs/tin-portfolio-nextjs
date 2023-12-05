@@ -51,7 +51,7 @@ function page() {
 
         <div>
           <h1 className="text-3xl font-InterBo mt-7 my-3 dark:text-white text-neutral-800">
-            It's Yatin Chaudhari
+            Hi 👋, I'm Yatin Chaudhari here.
           </h1>
           <motion.p
             initial={{ y: 100, opacity: 0 }}
@@ -62,12 +62,13 @@ function page() {
             }}
             className="text-neutral-700 text-lg my-7 leading-8 font-InterRe dark:text-[#C0C0C0]"
           >
-            I'm Joscript, a a software engineeer with over 5 years of
-            experience, currently residing in Abuja, Nigeria. I have a deep
-            passion for crafting purposeful interfaces and products. My main
-            goal is to bridge the divide between people and technology,
-            transforming intricate challenges into meaningful and seamless
-            experiences.
+            A persistent learner and always Learning new technologies .I have a
+            particular interest in development, and I am currently working
+            towards becoming a MERN Stack Developer. I’m currently learning
+            NextJs and TypeScript.😬. I’m looking forward to learn AWS(S3, EC2,
+            and Lambda) and React Native(for mobile development). Goals: Learn
+            and contribute to Open Source projects and Become Confident Full
+            Stack Developer.
           </motion.p>
         </div>
       </div>
