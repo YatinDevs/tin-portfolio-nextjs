@@ -1,3 +1,4 @@
+import Footer from "./Footer/footer";
 import "./globals.css";
 import Header from "./Header/header";
 import ThemeinProvider from "@/theme/ThemeProvider";
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <ThemeinProvider>
           <Header />
           {children}
+          <Footer />
         </ThemeinProvider>
       </body>
     </html>

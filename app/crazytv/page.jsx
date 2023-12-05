@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Footer from "../Footer/footer";
 
 import Link from "next/link";
 import React from "react";
