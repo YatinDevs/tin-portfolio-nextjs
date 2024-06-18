@@ -15,7 +15,6 @@
 // };
 
 // export default ThemeProvider;
-
 "use client";
 import { ThemeProvider } from "next-themes";
 

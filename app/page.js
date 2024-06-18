@@ -89,7 +89,7 @@ export default function Home() {
               </Link>
               <Link
                 href={
-                  "https://drive.google.com/file/d/1vu_2Cb3BbndXsRdJXiI6s5imm9XxADo8/view"
+                  "https://drive.google.com/file/d/1dLXDiudXqpH-iGaUr7Wnu38LmQFsY9qM/view?usp=sharing"
                 }
               >
                 <div className="border-neutral-300 dark:border-neutral-700/50 shadow-md border  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
